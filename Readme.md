@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Константин Жерновков](https://up.htmlacademy.ru/htmlcss/31/user/1506667).
-* Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867)}.
+* Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867).
 
 ---
 
