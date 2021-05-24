@@ -91,11 +91,20 @@
         <h3>ФИЛЬТР:</h3>
         <fieldset>
           <legend>ЦЕНА:</legend>
-            <label for="filterPrice"></label>
-            <input id="filterPrice" type="range" min="0" max="30000" step="any" value="0">
-            <input id="filterPrice" type="range" min="0" max="30000" step="any" value="30000"> <br>
-            <input id="filterPriceMin" type="text" name="filterPrice" value="0"> —
-            <input id="filterPriceMax" type="text" name="filterPrice" value="30000">
+            <label for="filterRangeMin">
+              <input id="filterRangeMin" type="range" min="0" max="30000" step="any" value="0">
+            </label>
+            <label for="filterRangeMax">
+              <input id="filterRangeMax" type="range" min="0" max="30000" step="any" value="30000">
+            </label>
+             <br>
+             <label for="filterPriceMin">
+              <input id="filterPriceMin" type="text" name="filterPriceMin" value="0">
+             </label>
+             —
+             <label for="filterPriceMax">
+              <input id="filterPriceMax" type="text" name="filterPriceMax" value="30000">
+             </label>
         </fieldset>
         <fieldset>
           <legend>ПРОИЗВОДИТЕЛИ:</legend>
