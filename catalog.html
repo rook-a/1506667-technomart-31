@@ -51,8 +51,8 @@
 
   <header class="header">
     <div class="header__top">
-      <a class="header__logo--link" href="index.html">
-        <img class="header__logo--img" src="img/logo.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт" />
+      <a class="logo__link" href="index.html">
+        <img class="logo__img" src="img/logo.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт" />
       </a>
 
       <form class="header__search" action="#" method="GET">
@@ -60,15 +60,15 @@
         <button type="submit"></button>
       </form>
 
-      <ul class="header__cart">
+      <ul class="header__carts">
         <li>
-          <a class="header__cart--bookmark" href="#">Закладки: 0</a>
+          <a class="header__cart header__cart--bookmark" href="#">Закладки: 0</a>
         </li>
         <li>
-          <a class="header__cart--basket active" href="#">Корзина: 10</a>
+          <a class="header__cart header__cart--basket active" href="#">Корзина: 10</a>
         </li>
         <li>
-          <a class="header__cart--arrange" href="#">Оформить заказ</a>
+          <a class="header__cart header__cart--arrange" href="#">Оформить заказ</a>
         </li>
       </ul>
     </div>
@@ -80,13 +80,13 @@
 
       <p class="header__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
 
-      <div class="header__user">
-        <div class="header__user--profile">
-          <a class="header__user--link" href="#">
-            <svg class="header__user--icon">
+      <div class="header__user user">
+        <div class="user__profile">
+          <a class="user__link" href="#">
+            <svg class="user__icon">
               <use xlink:href="#user"></use>
             </svg>
-            <p class="header__user--name">Равшан Джамшутович</p>
+            <p class="user__name">Равшан Джамшутович</p>
           </a>
           <a class="header__logout--btn" href="#">
             <svg class="header__logout--icon">
@@ -95,36 +95,36 @@
           </a>
         </div>
 
-        <div class="header__user--btn">
-          <a class="header__user--cart" href="#">Мои заказы</a>
-          <a class="header__user--profile" href="#">Личный кабинет</a>
+        <div class="user__btn">
+          <a href="#">Мои заказы</a>
+          <a href="#">Личный кабинет</a>
         </div>
       </div>
 
     </div>
 
-    <nav class="header__nav">
+    <nav class="header__nav navigation">
       <ul>
         <li>
-          <a class="header__nav--link" href="index.html">Главная</a>
+          <a class="navigation__link" href="index.html">Главная</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Компания</a>
+          <a class="navigation__link" href="#">Компания</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Каталог</a>
+          <a class="navigation__link" href="#">Каталог</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Новости</a>
+          <a class="navigation__link" href="#">Новости</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Спецпредложения</a>
+          <a class="navigation__link" href="#">Спецпредложения</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Доставка</a>
+          <a class="navigation__link" href="#">Доставка</a>
         </li>
         <li>
-          <a class="header__nav--link" href="#">Контакты</a>
+          <a class="navigation__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -132,7 +132,7 @@
 
   <main>
 
-      <h1 class="title">ПЕРФОРАТОРЫ</h1>
+      <h1 class="title">Перфораторы</h1>
 
     <ul class="breadcrumbs">
       <li>
@@ -155,11 +155,11 @@
 
     <section class="filters">
 
-      <h3 class="filters__title">ФИЛЬТР:</h3>
+      <h3 class="filters__title">фильтр:</h3>
 
       <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="filter__range">
-          <legend>ЦЕНА:</legend>
+          <legend>цена:</legend>
           <div class="filter__range--wrap">
             <label for="filterRangeMin">
               <input id="filterRangeMin" type="range" min="0" max="30000" step="any" value="0" />
@@ -179,15 +179,15 @@
         </fieldset>
 
         <fieldset class="filter__checkbox">
-          <legend>ПРОИЗВОДИТЕЛИ:</legend>
+          <legend>производители:</legend>
           <ul class="filter__checkbox">
             <li>
               <input id="filterBosch" name="Bosch" type="checkbox" checked />
-              <label for="filterBosch">BOSCH</label>
+              <label for="filterBosch">bosch</label>
             </li>
             <li>
               <input id="filterInterskol" name="Interskol" type="checkbox" />
-              <label for="filterInterskol">ИНТЕРСКОЛ</label>
+              <label for="filterInterskol">Интерскол</label>
             </li>
             <li>
               <input id="filterMakita" name="MAKIta" type="checkbox" checked />
@@ -205,7 +205,7 @@
         </fieldset>
 
         <fieldset class="filters__radio">
-          <legend>ПИТАНИЕ:</legend>
+          <legend>питание:</legend>
           <ul class="filter__radio">
             <li>
               <input id="filterPower-battery" name="filterPower" type="radio" value="battery" checked />
@@ -217,139 +217,139 @@
             </li>
           </ul>
         </fieldset>
-        <button class="filter__btn" type="submit">ПОКАЗАТЬ</button>
+        <button class="filter__btn" type="submit">показать</button>
       </form>
     </section>
 
     <section class="catalog">
-      <h3 class="catalog__title">СОРТИРОВКА:</h3>
+      <h3 class="catalog__title">сортировка:</h3>
 
-      <ul class="catalog__list">
+      <ul class="catalog__items">
         <li class="catalog__item">
-          <a class="catalog__item--link catalog__item--active" href="#">ПО ЦЕНЕ</a>
+          <a class="catalog__item__link catalog__item__active" href="#">по цене</a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__item--link" href="#">ПО ТИПУ</a>
+          <a class="catalog__item__link" href="#">по типу</a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__item--link" href="#">ПО ФУНКЦИОНАЛУ</a>
+          <a class="catalog__item__link" href="#">по функционалу</a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__item--link catalog__item--active" href="#">▲</a>
+          <a class="catalog__item__link catalog__item__active" href="#">▲</a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__item--link" href="#">▼</a>
+          <a class="catalog__item__link" href="#">▼</a>
         </li>
       </ul>
 
       <ul class="features__list">
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
+          <img class="features__item__img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
             alt="Изображение перфоратора BOSCH BFG 6000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 6000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 6000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">25500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">25500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
+          <img class="features__item__img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
             alt="Изображение перфоратора BOSCH BFG 6000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 6000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 6000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">25500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">25500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
+          <img class="features__item__img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
             alt="Изображение перфоратора BOSCH BFG 6000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 6000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 6000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">25500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">25500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-3000.jpg" width="127" height="112"
+          <img class="features__item__img" src="img/items/bosch-bfg-3000.jpg" width="127" height="112"
             alt="Изображение перфоратора BOSCH BFG 3000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 3000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">22500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 3000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">22500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">15500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">15500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
+          <img class="features__item__img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
             alt="Изображение перфоратора BOSCH BFG 6000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 6000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 6000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">25500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">25500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-2000.jpg" width="127" height="112"
+          <img class="features__item__img" src="img/items/bosch-bfg-2000.jpg" width="127" height="112"
             alt="Изображение перфоратора BOSCH BFG 2000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 2000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 2000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">12500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">12500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-3000.jpg" width="127" height="112"
+          <img class="features__item__img" src="img/items/bosch-bfg-3000.jpg" width="127" height="112"
             alt="Изображение перфоратора BOSCH BFG 3000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 3000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">22500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 3000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">22500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">15500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">15500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
+          <img class="features__item__img" src="img/items/bosch-bfg-6000.jpg" width="144" height="128"
             alt="Изображение перфоратора BOSCH BFG 6000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 6000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 6000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">25500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">25500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
         <li class="features__item">
-          <img class="features__item--img" src="img/items/bosch-bfg-2000.jpg" width="127" height="112"
+          <img class="features__item__img" src="img/items/bosch-bfg-2000.jpg" width="127" height="112"
             alt="Изображение перфоратора BOSCH BFG 2000"/>
 
-          <h4 class="features__item--title">Перфоратор BOSCH BFG 2000</h4>
-          <span class="features__item--new">NEW</span>
-          <p class="features__item--price">30500 Р.</p>
+          <h4 class="features__item__title">Перфоратор BOSCH BFG 2000</h4>
+          <span class="features__item__new">new</span>
+          <p class="features__item__price">30500 Р.</p>
 
-          <button class="btn features__item--btn" type="button">12500 Р.</button>
-          <button class="btn features__item--buy" type="button">КУПИТЬ</button>
-          <button class="btn features__item--bookmark" type="button">В ЗАКЛАДКИ</button>
+          <button class="btn features__item__btn" type="button">12500 Р.</button>
+          <button class="btn features__item__buy" type="button">купить</button>
+          <button class="btn features__item__bookmark" type="button">в закладки</button>
         </li>
       </ul>
 
@@ -364,13 +364,13 @@
           <a class="pagination__link" href="#">3</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link" href="#">СЛЕДУЮЩАЯ</a>
+          <a class="pagination__link" href="#">следующая</a>
         </li>
       </ul>
     </section>
 
     <section class="about__items">
-      <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <h2>пара слов о перфораторах</h2>
 
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -387,21 +387,21 @@
     <div class="footer__top">
       <img class="footer__logo" src="img/logo-big.png" width="220" height="68" alt="Логотип интернет-магазина Техномарт" />
 
-      <ul class="footer__nav">
+      <ul class="footer__nav nav">
         <li>
-          <a class="footer__nav-link" href="#">Компания</a>
+          <a class="nav__link" href="#">Компания</a>
         </li>
         <li>
-          <a class="footer__nav-link" href="#">Новости</a>
+          <a class="nav__link" href="#">Новости</a>
         </li>
         <li>
-          <a class="footer__nav-link" href="#">Каталог</a>
+          <a class="nav__link" href="#">Каталог</a>
         </li>
         <li>
-          <a class="footer__nav-link" href="#">Доставка</a>
+          <a class="nav__link" href="#">Доставка</a>
         </li>
         <li>
-          <a class="footer__nav-link" href="#">Контакты</a>
+          <a class="nav__link" href="#">Контакты</a>
         </li>
       </ul>
 
@@ -409,18 +409,18 @@
         г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28
       </address>
 
-      <ul class="footer__subnav">
+      <ul class="footer__subnav subnav">
         <li>
-          <a class="footer__subnav--link" href="#">Материалы</a>
+          <a class="subnav__link" href="#">Материалы</a>
         </li>
         <li>
-          <a class="footer__subnav--link" href="#">Техника</a>
+          <a class="subnav__link" href="#">Техника</a>
         </li>
         <li>
-          <a class="footer__subnav--link" href="#">Инструмент</a>
+          <a class="subnav__link" href="#">Инструмент</a>
         </li>
         <li>
-          <a class="footer__subnav--link" href="#">Спецпредложения</a>
+          <a class="subnav__link" href="#">Спецпредложения</a>
         </li>
       </ul>
     </div>
@@ -429,24 +429,24 @@
 
       <p class="footer__copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
 
-      <ul class="footer__social">
-        <li class="footer__social--icon">
-          <a class="footer__social--link" href="https://vk.com/">
-            <svg class="footer__social--vk">
+      <ul class="footer__social social">
+        <li class="social__icon">
+          <a class="social__link" href="https://vk.com/">
+            <svg class="social__vk">
               <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
-        <li class="footer__social--icon">
-          <a class="footer__social--link" href="https://facebook.com/">
-            <svg class="footer__social--fb">
+        <li class="social__icon">
+          <a class="social__link" href="https://facebook.com/">
+            <svg class="social__fb">
               <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="footer__social--icon">
-          <a class="footer__social--link" href="https://instagram.com/">
-            <svg class="footer__social--inst">
+        <li class="social__icon">
+          <a class="social__link" href="https://instagram.com/">
+            <svg class="social__inst">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
@@ -475,8 +475,8 @@
     <p class="popup__text">Товар добавлен в корзину!</p>
 
     <div class="popup__btn">
-      <a class="btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-      <button class="btn popup__btn--white" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      <a class="btn" href="#">оформить заказ</a>
+      <button class="btn popup__btn--white" type="button">продолжить покупки</button>
     </div>
 
     <button class="btn--close" type="button"></button> <!-- для крестика закрытия -->
