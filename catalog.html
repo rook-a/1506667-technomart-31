@@ -189,45 +189,42 @@
                   </div>
                   <div class="filter__range__toggle filter__range__toggle--min" tabindex="0"></div>
                   <div class="filter__range__toggle filter__range__toggle--max" tabindex="0"></div>
-
-                <!-- <label for="filterRangeMin">
-                  <input id="filterRangeMin" type="range" min="0" max="30000" step="any" value="0" />
-                </label>
-                <label for="filterRangeMax">
-                  <input id="filterRangeMax" type="range" min="0" max="30000" step="any" value="30000" />
-                </label> -->
               </div>
-              <br />
-              <label for="filterPriceMin">
-                <input id="filterPriceMin" name="filterPriceMin" type="text" placeholder="0"/>
-              </label>
-              <span>-</span>
-              <label for="filterPriceMax">
-                <input id="filterPriceMax" name="filterPriceMax" type="text" placeholder="30000"/>
-              </label>
+
+              <div class="filter__range__price">
+
+                <label for="filterPriceMin">
+                  <input id="filterPriceMin" name="filterPriceMin" type="text" placeholder="0"/>
+                </label>
+                <span></span>
+                <label for="filterPriceMax">
+                  <input id="filterPriceMax" name="filterPriceMax" type="text" placeholder="30000"/>
+                </label>
+
+              </div>
             </fieldset>
 
             <fieldset class="filter__checkbox">
               <legend class="filter__title--company">производители:</legend>
               <ul class="filter__checkbox">
                 <li class="filter__option filter__checkbox__item">
-                  <input class="filter__checkbox__input visually-hidden" id="filterBosch" name="Bosch" type="checkbox" checked />
+                  <input class="filter__checkbox__input visually-hidden" id="filterBosch" name="Bosch" type="checkbox" checked/>
                   <label for="filterBosch">bosch</label>
                 </li>
                 <li class="filter__option filter__checkbox__item">
-                  <input class="filter__checkbox__input visually-hidden" id="filterInterskol" name="Interskol" type="checkbox" />
+                  <input class="filter__checkbox__input visually-hidden" id="filterInterskol" name="Interskol" type="checkbox"/>
                   <label for="filterInterskol">Интерскол</label>
                 </li>
                 <li class="filter__option filter__checkbox__item">
-                  <input class="filter__checkbox__input visually-hidden" id="filterMakita" name="MAKIta" type="checkbox" checked />
+                  <input class="filter__checkbox__input visually-hidden" id="filterMakita" name="MAKIta" type="checkbox" checked/>
                   <label for="filterMakita">MAKIta</label>
                 </li>
                 <li class="filter__option filter__checkbox__item">
-                  <input class="filter__checkbox__input visually-hidden" id="filterDewalt" name="Dewalt" type="checkbox" />
+                  <input class="filter__checkbox__input visually-hidden" id="filterDewalt" name="Dewalt" type="checkbox"/>
                   <label for="filterDewalt">Dewalt</label>
                 </li>
                 <li class="filter__option filter__checkbox__item">
-                  <input class="filter__checkbox__input visually-hidden" id="filterHitachi" name="Hitachi" type="checkbox" />
+                  <input class="filter__checkbox__input visually-hidden" id="filterHitachi" name="Hitachi" type="checkbox"/>
                   <label for="filterHitachi">Hitachi</label>
                 </li>
               </ul>
@@ -237,11 +234,11 @@
               <legend class="filter__title--power">питание:</legend>
               <ul class="filter__radio">
                 <li class="filter__option filter__radio__item">
-                  <input class="filter__radio__input visually-hidden" id="filterPower-battery" name="filterPower" type="radio" value="battery" checked />
+                  <input class="filter__radio__input visually-hidden" id="filterPower-battery" name="filterPower" type="radio" value="battery" checked/>
                   <label for="filterPower-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter__option filter__radio__item">
-                  <input class="filter__radio__input visually-hidden" id="filterPower-network" name="filterPower" type="radio" value="network" />
+                  <input class="filter__radio__input visually-hidden" id="filterPower-network" name="filterPower" type="radio" value="network"/>
                   <label for="filterPower-network">Сетевые</label>
                 </li>
               </ul>
@@ -573,7 +570,7 @@
   </footer>
 
   <!-- popup -->
-  <div class="popup">
+  <div class="modal popup">
 
     <p class="popup__text">Товар добавлен в корзину!</p>
 
