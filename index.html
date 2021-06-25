@@ -173,15 +173,16 @@
 
         <li class="product__sliders">
 
-          <div class="product__slider__items">
-            <h3 class="product__slider__title">Дрели</h3>
-            <p class="product__slider__text">Соседям на радость!</p>
-          </div>
-
-          <div class="product__slider__items slider__active">
-            <h3 class="product__slider__title">Перфораторы</h3>
-            <p class="product__slider__text">Настоящие мужские игрушки</p>
-          </div>
+          <ul class="product__slider__list">
+            <li class="product__slider__items">
+              <h3 class="product__slider__title">Дрели</h3>
+              <p class="product__slider__text">Соседям на радость!</p>
+            </li>
+            <li class="product__slider__items slider__active">
+              <h3 class="product__slider__title">Перфораторы</h3>
+              <p class="product__slider__text">Настоящие мужские игрушки</p>
+            </li>
+          </ul>
 
           <button class="product__slider__btn slider__btn--back" type="button" aria-label="Назад" disabled></button>
           <button class="product__slider__btn slider__btn--forward" type="button" aria-label="Вперёд"></button>
@@ -424,7 +425,7 @@
           заехав&nbsp;в&nbsp;наш&nbsp;офис:
         </p>
 
-        <a class="contact__map" href="https://www.google.ru/maps">
+        <a class="contact__map" href="https://goo.gl/maps/HedURa4VyRGnFMug8">
           <img src="img/map-small.png" width="300" height="158" alt="Офис интернет-магазина Техномарт на карте">
         </a>
 
@@ -543,7 +544,7 @@
     <button class="btn btn--close" type="button"></button> <!-- для крестика закрытия -->
   </div>
 
-  <form class="modal form" action="#" method="POST">
+  <form class="modal form" action="https://echo.htmlacademy.ru" method="POST">
 
     <div class="form__container">
       <label class="form__name" for="userName">
@@ -569,7 +570,24 @@
       <button class="btn btn--submit" type="submit">Отправить</button>
     </div>
 
-    <button class="btn btn--close" type="button" aria-label="Закрыть"></button> <!-- для крестика закрытия -->
+    <button class="btn btn--close btn--close--form" type="button" aria-label="Закрыть форму"></button> <!-- для крестика закрытия -->
   </form>
+
+    <!-- popup -->
+    <div class="modal popup">
+
+      <p class="popup__text">Товар добавлен в корзину!</p>
+
+      <div class="popup__btn">
+        <a class="btn btn--checkout" href="#">оформить заказ</a>
+        <button class="btn btn--white" type="button">продолжить покупки</button>
+      </div>
+
+      <button class="btn btn--close btn--close--popup" type="button"></button> <!-- для крестика закрытия -->
+    </div>
+
+  <script src="script/alert.js"></script>
+  <script src="script/formModal.js"></script>
+  <script src="script/mapModal.js"></script>
 </body>
 </html>
