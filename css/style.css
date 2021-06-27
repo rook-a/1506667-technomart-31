@@ -1592,7 +1592,7 @@
   display: grid;
   grid-template-columns: 240px 1fr;
   align-items: center;
-  height: 185px;
+  min-height: 185px;
 }
 
 .services__slider:nth-child(1) {
@@ -1629,35 +1629,23 @@
   margin-bottom: 29px;
 }
 
-.services__slider__content:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 1px;
-  width: 468px;
-  height: 261px;
+.services__slider__content:nth-child(1) {
 
   background-image: url('../img/services/delivery.png');
-  background-position: 0 0;
+  background-position: 151px 20px;
   background-repeat: no-repeat;
 }
 
-.services__slider__content:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  right: -87px;
-  width: 468px;
-  height: 261px;
+.services__slider__content:nth-child(2) {
   background-image: url('../img/services/guarantee.png');
-  background-position: 0 0;
+  background-position: 239px 0;
   background-repeat: no-repeat;
 }
 
 .services__slider__content:nth-child(3)::after {
   content: "";
   position: absolute;
-  top: -2px;
+  top: 0;
   right: -13px;
   width: 468px;
   height: 261px;
@@ -1688,6 +1676,9 @@
 }
 
 .services__slider__content p {
+  position: relative;
+  z-index: 1;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -2124,6 +2115,7 @@
   top: 18%;
   bottom: auto;
   right: 1%;
+  z-index: 2;
 
   border-top: 7px solid var(--basic-red);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -2148,6 +2140,7 @@
   top: 20%;
   bottom: auto;
   right: 1%;
+  z-index: 2;
 
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
@@ -2275,10 +2268,9 @@
   transform: rotate(-45deg);
 }
 
-
 /* popup */
 .popup {
-  display: flex;
+  display: none;
   flex-direction: column;
 
   display: none;
@@ -2286,6 +2278,7 @@
   width: 620px;
   bottom: auto;
   left: 31px;
+  z-index: 2;
 
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);

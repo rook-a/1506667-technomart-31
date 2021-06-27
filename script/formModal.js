@@ -20,7 +20,6 @@ formBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
   formModal.classList.add('form--active');
 
-  // баг в условиях 24-36. очередность name -> mail. если имя пустое фокус на меил, а наоборот бага нет
   if (storageMail) {
     userMail.value = storageMail;
     userMessage.focus();
