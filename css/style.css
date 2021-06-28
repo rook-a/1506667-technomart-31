@@ -1564,7 +1564,6 @@
 /* services */
 .services {
   padding-top: 36px;
-  padding-bottom: 100px;
   background-color: var(--basic-bg);
 }
 
@@ -1591,7 +1590,7 @@
 .services__sliders {
   display: grid;
   grid-template-columns: 240px 1fr;
-  align-items: center;
+  align-items: flex-start;
   min-height: 185px;
 }
 
@@ -1629,8 +1628,13 @@
   margin-bottom: 29px;
 }
 
-.services__slider__content:nth-child(1) {
+.services__slider__content:nth-child(1),
+.services__slider__content:nth-child(2),
+.services__slider__content:nth-child(3) {
+  min-height: 256px;
+}
 
+.services__slider__content:nth-child(1) {
   background-image: url('../img/services/delivery.png');
   background-position: 151px 20px;
   background-repeat: no-repeat;
@@ -2039,7 +2043,8 @@
   border-radius: 50%;
 }
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--basic-red)
 }
 
