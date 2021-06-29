@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicon/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/min.style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
@@ -48,18 +48,18 @@
   <header class="header">
     <div class="header__container">
       <div class="header__top container">
-        <a class="logo" href="#">
-          <svg class="logo__img">
+        <a class="logo" href="#" aria-label="Логотип интернет-магазина ТехноМарт">
+          <svg aria-hidden="true" class="logo__img">
             <use xlink:href="#logo"></use>
           </svg>
         </a>
 
         <form class="header__search" action="#" method="GET">
           <input class="header__search__input" type="text" placeholder="Поиск:">
-          <svg class="header__search__icon">
+          <svg aria-hidden="true" class="header__search__icon">
             <use xlink:href="#search__icon"></use>
           </svg>
-          <button class="visually-hidden" type="submit"></button>
+          <button class="visually-hidden" type="submit" aria-label="Поиск"></button>
         </form>
 
         <ul class="header__carts">
@@ -93,7 +93,7 @@
         </div>
 
         <div class="header__btn">
-          <svg class="header__btn--icon">
+          <svg aria-hidden="true" class="header__btn--icon">
             <use xlink:href="#login"></use>
           </svg>
           <a class="header__btn--login" href="#">Войти</a>
@@ -292,43 +292,43 @@
 
       <ul class="company__list">
         <li class="company__item">
-          <a href="https://www.bosch.ru/">
-            <img src="img/logo/bosch.png" width="126" height="37" alt="Логотип компании Bosch">
+          <a class="company__link" href="https://www.bosch.ru/" aria-label="Ссылка на официальный сайт компании Bosch">
+            <img src="img/logo/bosch.png" width="126" height="37" alt="Изображение логотипа компании Bosch">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.makita.ru/">
-            <img src="img/logo/makita.png" width="123" height="40" alt="Логотип компании Makita">
+          <a class="company__link" href="https://www.makita.ru/" aria-label="Ссылка на официальный сайт компании Makita">
+            <img src="img/logo/makita.png" width="123" height="40" alt="Изображение логотипа компании Makita">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://shop.dewalt.ru/">
-            <img src="img/logo/dewalt.png" width="146" height="44" alt="Логотип компании DeWALT">
+          <a class="company__link" href="https://shop.dewalt.ru/" aria-label="Ссылка на официальный сайт компании DeWALT">
+            <img src="img/logo/dewalt.png" width="146" height="44" alt="Изображение логотипа компании DeWALT">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.interskol.ru/">
-            <img src="img/logo/interskol.png" width="200" height="76" alt="Логотип компании Интерскол">
+          <a class="company__link" href="https://www.interskol.ru/" aria-label="Ссылка на официальный сайт компании Интерскол">
+            <img src="img/logo/interskol.png" width="200" height="76" alt="Изображение логотипа компании Интерскол">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.hitachi.ru/ru">
-            <img src="img/logo/hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
+          <a class="company__link" href="https://www.hitachi.ru/ru" aria-label="Ссылка на официальный сайт компании Hitachi">
+            <img src="img/logo/hitachi.png" width="169" height="31" alt="Изображение логотипа компании Hitachi">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.lg.com/ru">
-            <img src="img/logo/lg.png" width="121" height="73" alt="Логотип компании LG">
+          <a class="company__link" href="https://www.lg.com/ru" aria-label="Ссылка на официальный сайт компании LG">
+            <img src="img/logo/lg.png" width="121" height="73" alt="Изображение логотипа компании LG">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.aeg.ru/">
-            <img src="img/logo/aeg.png" width="151" height="96" alt="Логотип компании AEG">
+          <a class="company__link" href="https://www.aeg.ru/" aria-label="Ссылка на официальный сайт компании AEG">
+            <img src="img/logo/aeg.png" width="151" height="96" alt="Изображение логотипа компании AEG">
           </a>
         </li>
         <li class="company__item">
-          <a href="https://www.metabo.com/ru/ru/">
-            <img src="img/logo/metabo.png" width="204" height="69" alt="Логотип компании Metabo">
+          <a class="company__link" href="https://www.metabo.com/ru/ru/" aria-label="Ссылка на официальный сайт компании Metabo">
+            <img src="img/logo/metabo.png" width="204" height="69" alt="Изображение логотипа компании Metabo">
           </a>
         </li>
 
@@ -425,7 +425,7 @@
           заехав&nbsp;в&nbsp;наш&nbsp;офис:
         </p>
 
-        <a class="contact__map" href="https://goo.gl/maps/HedURa4VyRGnFMug8">
+        <a class="contact__map" href="https://goo.gl/maps/HedURa4VyRGnFMug8" aria-label="Ссылка на интерактивную карту с адресом нашего офиса">
           <img src="img/map-small.png" width="300" height="158" alt="Офис интернет-магазина Техномарт на карте">
         </a>
 
@@ -493,22 +493,22 @@
 
         <ul class="footer__social social">
           <li class="social__icon">
-            <a class="social__link" href="https://vk.com/">
-              <svg class="social__vk">
+            <a class="social__link" href="https://vk.com/" aria-label="Вконтакте">
+              <svg aria-hidden="true" class="social__vk">
                 <use xlink:href="#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__icon">
-            <a class="social__link" href="https://facebook.com/">
-              <svg class="social__fb">
+            <a class="social__link" href="https://facebook.com/" aria-label="Фейсбук">
+              <svg aria-hidden="true" class="social__fb">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__icon">
-            <a class="social__link" href="https://instagram.com/">
-              <svg class="social__inst">
+            <a class="social__link" href="https://instagram.com/" aria-label="Инстаграм">
+              <svg aria-hidden="true" class="social__inst">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
@@ -535,13 +535,13 @@
 
   <!-- modal -->
   <div class="modal modal__map">
-    <a href="https://goo.gl/maps/HedURa4VyRGnFMug8">
+    <a href="https://goo.gl/maps/HedURa4VyRGnFMug8" aria-label="Ссылка на интерактивную карту с адресом нашего офиса">
       <img src="img/map-big.png" width="943" height="449" alt="Офис интернет-магазина Техномарт на увеличенной карте">
     </a>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563626!2d30.315220216221178!3d59.96826866667002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1623971203628!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
 
-    <button class="btn btn--close" type="button"></button> <!-- для крестика закрытия -->
+    <button class="btn btn--close" type="button" aria-label="Закрыть карту"></button>
   </div>
 
   <form class="modal form" action="https://echo.htmlacademy.ru" method="POST">
@@ -570,7 +570,7 @@
       <button class="btn btn--submit" type="submit">Отправить</button>
     </div>
 
-    <button class="btn btn--close btn--close--form" type="button" aria-label="Закрыть форму"></button> <!-- для крестика закрытия -->
+    <button class="btn btn--close btn--close--form" type="button" aria-label="Закрыть форму"></button>
   </form>
 
     <!-- popup -->
@@ -583,11 +583,11 @@
         <button class="btn btn--white" type="button">продолжить покупки</button>
       </div>
 
-      <button class="btn btn--close btn--close--popup" type="button"></button> <!-- для крестика закрытия -->
+      <button class="btn btn--close btn--close--popup" type="button" aria-label="Закрыть уведомление"></button>
     </div>
 
-  <script src="script/min.alert.js"></script>
-  <script src="script/min.formModal.js"></script>
-  <script src="script/min.mapModal.js"></script>
+  <script src="script/alert.min.js"></script>
+  <script src="script/formModal.min.js"></script>
+  <script src="script/mapModal.min.js"></script>
 </body>
 </html>

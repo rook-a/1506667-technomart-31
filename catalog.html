@@ -9,11 +9,13 @@
   <link rel="apple-touch-icon" href="img/favicon/icon-180.png" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/min.style.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>HTML Academy: Техномарт</title>
 </head>
 
 <body class="page__body">
+
+  <!-- sprite -->
   <svg style="display: none;">
 
     <symbol id="user" viewBox="0 0 20 18">
@@ -54,18 +56,18 @@
   <header class="header header__inner">
     <div class="header__container">
       <div class="header__top container">
-        <a class="logo" href="index.html">
-          <svg class="logo__img">
+        <a class="logo" href="index.html" aria-label="Ссылка на главную страницу интернет-магазина Техномарт">
+          <svg aria-hidden="true" class="logo__img">
             <use xlink:href="#logo"></use>
           </svg>
         </a>
 
         <form class="header__search" action="#" method="GET">
           <input class="header__search__input" type="text" placeholder="Поиск:">
-          <svg class="header__search__icon">
+          <svg aria-hidden="true" class="header__search__icon">
             <use xlink:href="#search__icon"></use>
           </svg>
-          <button class="visually-hidden" type="submit"></button>
+          <button class="visually-hidden" type="submit" aria-label="Поиск"></button>
         </form>
 
         <ul class="header__carts">
@@ -98,16 +100,16 @@
 
         <div class="header__user user">
           <div class="user__profile">
-            <a class="user__link" href="#">
-              <svg class="user__icon">
+            <a class="user__link" href="#" aria-label="Ссылка на личный профиль пользователя">
+              <svg aria-hidden="true" class="user__icon">
                 <use xlink:href="#user"></use>
               </svg>
 
               <p class="user__name">Равшан Джамшутович</p>
             </a>
 
-            <a class="header__logout--btn" href="#">
-              <svg class="header__logout--icon">
+            <a class="header__logout--btn" href="#" aria-label="Выйти из профиля">
+              <svg aria-hidden="true" class="header__logout--icon">
                 <use xlink:href="#logout"></use>
               </svg>
             </a>
@@ -158,8 +160,8 @@
 
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html">
-            <svg class="breadcrumbs__icon">
+          <a class="breadcrumbs__link" href="index.html" aria-label="Ссылка на главную страницу">
+            <svg aria-hidden="true" class="breadcrumbs__icon">
               <use xlink:href="#home"></use>
             </svg>
           </a>
@@ -263,10 +265,10 @@
               <a class="cards__filters__link" href="#">по функционалу</a>
             </li>
             <li class="cards__filters__item">
-              <a class="cards__filters__link cards__filters__link--active" href="#">▲</a>
+              <a class="cards__filters__link cards__filters__link--active" href="#" aria-label="По возрастанию">▲</a>
             </li>
             <li class="cards__filters__item">
-              <a class="cards__filters__link" href="#">▼</a>
+              <a class="cards__filters__link" href="#" aria-label="По убыванию">▼</a>
             </li>
           </ul>
         </div>
@@ -436,7 +438,7 @@
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item pagination__item--last">
               <a class="pagination__link" href="#">следующая</a>
             </li>
         </ul>
@@ -520,22 +522,22 @@
 
         <ul class="footer__social social">
           <li class="social__icon">
-            <a class="social__link" href="https://vk.com/">
-              <svg class="social__vk">
+            <a class="social__link" href="https://vk.com/" aria-label="Вконтакте">
+              <svg aria-hidden="true" class="social__vk">
                 <use xlink:href="#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__icon">
-            <a class="social__link" href="https://facebook.com/">
-              <svg class="social__fb">
+            <a class="social__link" href="https://facebook.com/" aria-label="Фейсбук">
+              <svg aria-hidden="true" class="social__fb">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__icon">
-            <a class="social__link" href="https://instagram.com/">
-              <svg class="social__inst">
+            <a class="social__link" href="https://instagram.com/" aria-label="Инстаграм">
+              <svg aria-hidden="true" class="social__inst">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
@@ -570,10 +572,10 @@
       <button class="btn btn--white" type="button">продолжить покупки</button>
     </div>
 
-    <button class="btn btn--close btn--close--popup" type="button"></button> <!-- для крестика закрытия -->
+    <button class="btn btn--close btn--close--popup" type="button" aria-label="Закрыть уведомление"></button>
   </div>
 
-  <script src="script/min.alert.js"></script>
+  <script src="script/alert.min.js"></script>
 </body>
 
 </html>
