@@ -91,6 +91,13 @@
   --input-border: #b5b5b5;
   --popup-btn: #f1f1f1;
   --popup-btn-hover: #e5e5e5;
+  --filter-link: rgba(0, 0, 0, .3);
+  --filter-border: rgba(0, 0, 0, .1);
+  --product-btn: rgba(255, 255, 255, .3);
+  --product-btn-hover: rgba(197, 197, 197, .3);
+  --product-btn-active: rgba(169, 169, 169, .3);
+  --card-shadow: rgba(0, 0, 0, .15);
+  --popup-shadow: rgba(41, 52, 73, .75);
 }
 
 /* global */
@@ -390,15 +397,16 @@
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
   text-transform: uppercase;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   padding-right: 50px;
   padding-left: 73px;
+  padding-top: 6px;
 }
 
 .header__phone::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 38px;
   width: 19px;
   height: 19px;
@@ -750,7 +758,7 @@
 .cards__filters__link {
   text-transform: uppercase;
   border-bottom: 1px dotted var(--basic-red);
-  color: rgba(0, 0, 0, .3);
+  color: var(--filter-link);
 }
 
 .cards__filters__link:hover,
@@ -781,7 +789,7 @@
 .filter fieldset:nth-child(1),
 .filter fieldset:nth-child(2) {
   padding-bottom: 25px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid var(--filter-border);
 }
 
 .filter fieldset:nth-child(1) {
@@ -1165,16 +1173,16 @@
   font-weight: 400;
   color: var(--basic-white);
   padding: 10px 25px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: var(--product-btn);
 }
 
 .product__btn:hover,
 .product__btn:focus {
-  background-color: rgba(197, 197, 197, .3);
+  background-color: var(--product-btn-hover);
 }
 
 .product__btn:active {
-  background-color: rgba(169, 169, 169, .3);
+  background-color: var(--product-btn-active);
 }
 
 /* product sliders */
@@ -1405,7 +1413,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
 }
 
 .card__wrapper {
@@ -1466,6 +1474,7 @@
   height: 38px;
   border-radius: 2px;
   font-size: 17px;
+  font-weight: 700;
 }
 
 .card__btn::after {
@@ -1567,11 +1576,11 @@
 }
 
 .company__item:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
 }
 
 .company__item:active {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
   opacity: .5;
 }
 
@@ -1584,7 +1593,7 @@
 }
 
 .company__link:focus {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
 }
 
 /* services */
@@ -2148,7 +2157,7 @@
   z-index: 2;
 
   border-top: 7px solid var(--basic-red);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
 }
 
 .modal__map--active {
@@ -2174,7 +2183,7 @@
 
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
   text-transform: none;
 }
 
@@ -2312,7 +2321,7 @@
 
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
+  box-shadow: 0px 20px 40px var(--popup-shadow);
 }
 
 .popup--active {
