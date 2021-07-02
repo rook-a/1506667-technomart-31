@@ -148,7 +148,7 @@
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .header__container {
@@ -157,7 +157,7 @@
 }
 
 .header .container:nth-child(2) {
-  padding: 46px 15px 60px 15px; /* padding top right bottom left */
+  padding: 46px 10px 60px 10px; /* padding top right bottom left */
 }
 
 /* header */
@@ -298,7 +298,7 @@
   height: 16px;
   opacity: .3;
 
-  background-image: url('../img/icons/icon-bookmark.svg');
+  background-image: url("../img/icons/icon-bookmark.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -324,7 +324,7 @@
   height: 16px;
   opacity: .3;
 
-  background-image: url('../img/icons/icon-cart.svg');
+  background-image: url("../img/icons/icon-cart.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -402,7 +402,7 @@
   left: 38px;
   width: 19px;
   height: 19px;
-  background-image: url('../img/icons/icon-phone.svg');
+  background-image: url("../img/icons/icon-phone.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -651,7 +651,7 @@
   width: 8px;
   height: 14px;
 
-  background-image: url('../img/icons/icon-right-small.svg');
+  background-image: url("../img/icons/icon-right-small.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -977,7 +977,7 @@
   width: 27px;
   height: 23px;
   border: none;
-  background-image: url('../img/icons/checkbox-on.svg');
+  background-image: url("../img/icons/checkbox-on.svg");
 }
 
 .filter__checkbox__input:checked:hover + label::before,
@@ -985,7 +985,7 @@
   width: 27px;
   height: 23px;
   border: none;
-  background-image: url('../img/icons/checkbox-on-hover.svg');
+  background-image: url("../img/icons/checkbox-on-hover.svg");
 }
 
 .filter__checkbox__input:checked:disabled + label::before {
@@ -993,7 +993,7 @@
   height: 23px;
   opacity: 1;
   border: none;
-  background-image: url('../img/icons/checkbox-on-disabled.svg');
+  background-image: url("../img/icons/checkbox-on-disabled.svg");
 }
 
 /* filter radio */
@@ -1090,7 +1090,7 @@
   grid-row: 1 / 2;
   background-color: var(--special-yellow);
 
-  background-image: url('../img/product/icon-material.svg');
+  background-image: url("../img/product/icon-material.svg");
   background-position: 83% 51%;
   background-repeat: no-repeat;
 }
@@ -1100,7 +1100,7 @@
   grid-row: 1 / 2;
   background-color: var(--special-blue);
 
-  background-image: url('../img/product/icon-tool.svg');
+  background-image: url("../img/product/icon-tool.svg");
   background-position: 86% 53%;
   background-repeat: no-repeat;
 }
@@ -1110,7 +1110,7 @@
   grid-row: 1 / 2;
   background-color: var(--special-lilac);
 
-  background-image: url('../img/product/icon-tech.svg');
+  background-image: url("../img/product/icon-tech.svg");
   background-position: 86% 50%;
   background-repeat: no-repeat;
 }
@@ -1124,7 +1124,7 @@
   grid-row: 2 / 3;
   background-color: var(--special-greenlight);
 
-  background-image: url('../img/product/icon-sale.svg');
+  background-image: url("../img/product/icon-sale.svg");
   background-position: 81% 51%;
   background-repeat: no-repeat;
 }
@@ -1142,7 +1142,7 @@
   grid-row: 3 / 4;
   background-color: var(--special-yellow);
 
-  background-image: url('../img/product/icon-delivery.svg');
+  background-image: url("../img/product/icon-delivery.svg");
   background-position: 86% 52%;
   background-repeat: no-repeat;
 }
@@ -1196,13 +1196,13 @@
   height: 216px;
   padding: 24px 26px 26px 24px;
 
-  background-image: url('../img/slider-1.jpg');
+  background-image: url("../img/slider-1.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .product__slider__items:nth-child(1) {
-  background-image: url('../img/slider-2.jpg');
+  background-image: url("../img/slider-2.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1240,14 +1240,14 @@
 
 .slider__btn--back {
   left: 24px;
-  background-image: url('../img/icons/icon-left.svg');
+  background-image: url("../img/icons/icon-left.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .slider__btn--forward {
   right: 20px;
-  background-image: url('../img/icons/icon-left.svg');
+  background-image: url("../img/icons/icon-left.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 
@@ -1517,7 +1517,7 @@
   height: 15px;
   opacity: .3;
 
-  background-image: url('../img/icons/icon-cart.svg');
+  background-image: url("../img/icons/icon-cart.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1546,7 +1546,7 @@
 
 /* company */
 .company {
-  margin-bottom: 70px;
+  margin-bottom: 73px;
 }
 
 .company__list {
@@ -1589,7 +1589,7 @@
 
 /* services */
 .services {
-  padding-top: 36px;
+  padding-top: 39px;
   background-color: var(--basic-bg);
 }
 
@@ -1637,7 +1637,7 @@
   width: 10px;
   height: 279px;
 
-  background-image: url('../img/services/gradient.png');
+  background-image: url("../img/services/gradient.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1661,13 +1661,13 @@
 }
 
 .services__slider__content:nth-child(1) {
-  background-image: url('../img/services/delivery.png');
+  background-image: url("../img/services/delivery.png");
   background-position: 151px 20px;
   background-repeat: no-repeat;
 }
 
 .services__slider__content:nth-child(2) {
-  background-image: url('../img/services/guarantee.png');
+  background-image: url("../img/services/guarantee.png");
   background-position: 239px 0;
   background-repeat: no-repeat;
 }
@@ -1679,7 +1679,7 @@
   right: -13px;
   width: 468px;
   height: 261px;
-  background-image: url('../img/services/credit.png');
+  background-image: url("../img/services/credit.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1762,7 +1762,7 @@
 .grid {
   display: grid;
   grid-template-columns:1fr 300px;
-  margin: 47px auto 72px auto; /* margin top bottom */
+  margin: 47px auto 70px auto; /* margin top bottom */
 }
 
 /* about */
@@ -1921,7 +1921,7 @@
   grid-row: 6 / 7;
   color: var(--basic-black);
   background-color: var(--basic-bg);
-  padding: 64px 0 70px 0;
+  padding: 64px 0 71px 0;
 }
 
 .description h2 {
@@ -2337,7 +2337,7 @@
   width: 66px;
   height: 66px;
 
-  background-image: url('../img/icons/icon-mark.svg');
+  background-image: url("../img/icons/icon-mark.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
